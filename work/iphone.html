@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iPhone — Lumière · Sam Lin</title>
+  <meta name="description" content="AI-driven product animation: workflow rebuild. Traditional 5-day pipeline compressed to 15 hours.">
+  <link rel="stylesheet" href="../styles/main.css">
+  <style>
+    .cs-lensmaster-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 28px; border: 1px solid var(--border); padding: 36px; margin-bottom: 36px; align-items: center; }
+    .cs-ab-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .cs-crossproject-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .cs-section05-grid { display: grid; grid-template-columns: 1fr 1.8fr; gap: 60px; }
+    @media (max-width: 860px) {
+      .cs-lensmaster-grid { grid-template-columns: 1fr; padding: 24px; }
+      .cs-ab-grid { grid-template-columns: 1fr; }
+      .cs-crossproject-grid { grid-template-columns: 1fr; }
+      .cs-section05-grid { grid-template-columns: 1fr; gap: 36px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="../index.html" class="nav__logo">Sam Lin</a>
+    <ul class="nav__links">
+      <li><a href="../index.html#work">Work</a></li>
+      <li><a href="../index.html#approach">Approach</a></li>
+      <li><a href="../index.html#bio">Bio</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+    <div class="nav__meta">2026 · TPE</div>
+  </nav>
+
+  <!-- BREADCRUMB -->
+  <div class="cs-breadcrumb">
+    <a href="../index.html#work">Work</a> &nbsp;/&nbsp; <a href="../index.html#work">Commercial</a> &nbsp;/&nbsp; <span class="cur">iPhone — Lumière</span>
+  </div>
+
+  <!-- TITLE BLOCK -->
+  <div class="cs-title-block">
+    <h1 class="cs-title">iPhone,<br><em>in full light.</em></h1>
+    <div class="cs-meta-row">
+      <div class="cs-meta-cell"><div class="l">Year</div><div class="v">2025</div></div>
+      <div class="cs-meta-cell"><div class="l">Client</div><div class="v">Spec Work</div></div>
+      <div class="cs-meta-cell"><div class="l">Role</div><div class="v">AI Pipeline · Direction · Comp</div></div>
+      <div class="cs-meta-cell"><div class="l">Category</div><div class="v">3C Commercial · Product Film</div></div>
+    </div>
+  </div>
+
+  <!-- HERO VIDEO -->
+  <div class="cs-hero-video">
+    <!-- Replace src with your real YouTube embed URL -->
+    <iframe
+      src="https://www.youtube.com/embed/KLMjMcn04oM?autoplay=1&mute=1&loop=1&playlist=KLMjMcn04oM&rel=0&controls=1"
+      title="iPhone Final v2"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <!-- INTRO -->
+  <div class="cs-intro">
+    <div>
+      <p>傳統 3D 產品廣告的製程問題,不只是「慢」—— 建模、材質、打光、鏡頭、合成,每一塊都是獨立的技術工,任何一塊卡住,後面全停。一個完整週期五天起跳,但設計師大半時間都在應付技術執行,真正能放在創意和品牌方向上的時間往往剩沒多少。</p>
+      <p class="hl">所以我想透過一個完整的實際案例來驗證:AI 工作流能不能在不犧牲視覺品質的前提下,把這條製程壓縮到讓人信服的程度。</p>
+      <p>結論是 15 小時,工時縮減 80%。但這個數字只是結果,真正值得說的是為了達到這個數字,我必須在工具失效的地方自己造工具 —— 那就是後面會講到的「鏡頭大師」。</p>
+    </div>
+    <div class="cs-side">
+      <div class="cs-side__block"><div class="cs-side__label">Duration</div><div class="cs-side__value">15 hours</div></div>
+      <div class="cs-side__block"><div class="cs-side__label">Vs. traditional</div><div class="cs-side__value">5 days</div></div>
+      <div class="cs-side__block"><div class="cs-side__label">Compression</div><div class="cs-side__value">80%</div></div>
+      <div class="cs-side__block"><div class="cs-side__label">Stack</div><div class="cs-side__list">Gemini (Custom Gem)<br>Nano Banana Pro<br>Kling 2.6 / 3.0<br>After Effects<br>Firefly · Suno AI</div></div>
+      <div class="cs-side__block"><div class="cs-side__label">Tool built</div><div class="cs-side__list">"Lens Master"<br>(Google AI Studio)</div></div>
+    </div>
+  </div>
+
+  <!-- SECTION 01: BOTTLENECK -->
+  <section class="section">
+    <div class="container">
+      <div class="section__meta">01 / The bottleneck</div>
+      <h2 class="display-s">Tradition, <em>as inertia.</em></h2>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 32px;">
+        <div class="card">
+          <div class="card__label">For stable-delivery studios</div>
+          <div class="card__title">交付速度與修改成本</div>
+          <div class="card__body">當市場要快速投放、客戶要看方案比較,傳統製程的週期跟成本根本撐不住這種需求。</div>
+        </div>
+        <div class="card">
+          <div class="card__label">For AI-native creative teams</div>
+          <div class="card__title">資源分配效率</div>
+          <div class="card__body">如果團隊的頂尖人力還在花時間解決建模與材質球設定,那這支團隊就沒有在做它最應該做的事。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 02: DESIGN DECISION (QUOTE) -->
+  <section class="quote-section">
+    <div class="container">
+      <div class="section__meta">02 / Design decision</div>
+      <blockquote class="quote">The real question isn't <em>which tools to use</em> — it's knowing when to <em>build your own.</em></blockquote>
+      <p style="max-width: 640px; margin: 32px auto 0; font-size: 14px; line-height: 1.75; color: var(--text-muted); text-align: left;">
+        整個工作流建立在 Google 生態系上,選擇這套生態系的理由是<strong style="color: var(--text); font-weight: 500;">資料流的一致性</strong> —— 工具之間的銜接不需要跨平台轉換。而動態生成工具的評估標準只有一個:大範圍動態運鏡的穩定性,Kling 在這個維度上的表現相對強勢。
+      </p>
+    </div>
+  </section>
+
+  <!-- SECTION 03: PIPELINE -->
+  <section class="section">
+    <div class="container">
+      <div class="section__meta">03 / Pipeline architecture</div>
+      <h2 class="display-s">A continuous <em>data flow.</em></h2>
+
+      <div class="cs-pipeline">
+        <div class="cs-phase">
+          <div class="cs-phase__label">Phase 01</div>
+          <div class="cs-phase__title">分鏡腳本層</div>
+          <div class="cs-phase__tool">
+            <div class="cs-phase__tool-name">Gemini</div>
+            <div class="cs-phase__tool-desc">多宮格分鏡表生成與 prompt 深化</div>
+          </div>
+          <div class="cs-phase__tool">
+            <div class="cs-phase__tool-name">Nano Banana Pro</div>
+            <div class="cs-phase__tool-desc">i2i 抽卡確認調性</div>
+          </div>
+        </div>
+
+        <div class="cs-phase cs-phase--core">
+          <div class="cs-phase__label">Phase 02 — core</div>
+          <div class="cs-phase__title">動態生成層</div>
+          <div class="cs-phase__tool">
+            <div class="cs-phase__tool-name">「鏡頭大師」(self-built)</div>
+            <div class="cs-phase__tool-desc">預先定義運鏡動作庫,輸出結構化 prompt</div>
+          </div>
+          <div class="cs-phase__tool">
+            <div class="cs-phase__tool-name">Kling 2.6 / 3.0</div>
+            <div class="cs-phase__tool-desc">主力 i2v 輸出</div>
+          </div>
+        </div>
+
+        <div class="cs-phase">
+          <div class="cs-phase__label">Phase 03</div>
+          <div class="cs-phase__title">後製合成層</div>
+          <div class="cs-phase__tool">
+            <div class="cs-phase__tool-name">After Effects</div>
+            <div class="cs-phase__tool-desc">含 AI 生成腳本輔助特效</div>
+          </div>
+          <div class="cs-phase__tool">
+            <div class="cs-phase__tool-name">Firefly · Suno AI</div>
+            <div class="cs-phase__tool-desc">視覺擴展與原創配樂</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 04: LENS MASTER -->
+  <section class="section-lg section">
+    <div class="container">
+      <div class="center" style="margin-bottom: 60px;">
+        <div class="section__meta">04 / The core infrastructure</div>
+        <h2 class="display-m" style="margin-bottom: 20px;">Lens Master — <em>a patient AI.</em></h2>
+        <p style="max-width: 600px; margin: 0 auto; font-size: 14px; line-height: 1.7; color: var(--text-muted);">
+          這不是提示詞工程,這是輸入介面的重新設計。把鏡頭語言結構化,將開放式的文字描述轉換為有邊界的約束條件。
+        </p>
+      </div>
+
+      <!-- UI + description -->
+      <div class="cs-lensmaster-grid">
+        <div>
+          <h3 style="font-family: var(--font-display); font-size: 24px; letter-spacing: -0.02em; margin-bottom: 16px;">後台介面與邏輯</h3>
+          <p style="font-size: 13.5px; line-height: 1.75; color: var(--text-muted); margin-bottom: 14px;">建立於 Google AI Studio 的中間層應用。讀取首尾幀視覺後,套用:</p>
+          <code style="font-family: var(--font-mono); font-size: 12px; background: var(--bg-elevated); padding: 6px 10px; border-radius: 3px; color: var(--accent); display: inline-block;">Lens type × Start/End frame × Intensity</code>
+          <p style="font-size: 13.5px; line-height: 1.75; color: var(--text-muted); margin-top: 18px;">強迫模型在明確條件下輸出最高品質的 Prompt。</p>
+        </div>
+        <!-- Replace with screenshot -->
+        <div style="aspect-ratio: 16/10; background: linear-gradient(135deg, #1a2a3a 0%, #0a1520 50%, #04080e 100%); border-radius: 4px; position: relative;">
+          <span style="position: absolute; left: 16px; bottom: 14px; font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.12em; color: var(--text-muted);">LENS MASTER UI</span>
+        </div>
+      </div>
+
+      <!-- A/B comparison -->
+      <div class="center" style="margin: 16px 0 28px;">
+        <h3 style="font-family: var(--font-display); font-size: 24px; letter-spacing: -0.02em; margin-bottom: 8px;">i2v 殘酷對比:約束的力量</h3>
+        <p style="font-size: 12px; color: var(--text-dim);">同樣的首尾圖 · 同樣的 Kling 模型 · 不同的 prompt 層</p>
+      </div>
+
+      <div class="cs-ab-grid">
+        <div>
+          <div style="display: flex; justify-content: space-between; margin-bottom: 12px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: #8a5050;">
+            <span>Without Lens Master</span><span>✕</span>
+          </div>
+          <!-- Replace with GIF -->
+          <div style="aspect-ratio: 16/10; background: linear-gradient(135deg, #2a2420 0%, #1a1512 50%, #0a0706 100%); filter: grayscale(1) brightness(0.7); border-radius: 3px;"></div>
+          <p style="text-align: center; font-size: 12px; color: var(--text-dim); margin-top: 12px;">動態過於平淡,運鏡隨機且幅度不足</p>
+        </div>
+        <div>
+          <div style="display: flex; justify-content: space-between; margin-bottom: 12px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent);">
+            <span>With Lens Master</span><span>✓</span>
+          </div>
+          <!-- Replace with GIF -->
+          <div style="aspect-ratio: 16/10; background: radial-gradient(ellipse at 55% 50%, #d89454 0%, #6a3818 40%, #1a0d08 100%); border-radius: 3px; box-shadow: 0 0 0 1px var(--accent-deep);"></div>
+          <p style="text-align: center; font-size: 12px; color: var(--text-dim); margin-top: 12px;">大角度高強度運鏡,動態一致性極高</p>
+        </div>
+      </div>
+
+      <!-- Cross-project -->
+      <div style="padding-top: 40px; border-top: 1px solid var(--border); margin-top: 48px;">
+        <div class="center" style="margin-bottom: 24px;">
+          <h3 style="font-family: var(--font-display); font-size: 18px; letter-spacing: -0.01em; color: var(--text);">工具已封裝 · 跨案例部署驗證</h3>
+        </div>
+        <div class="cs-crossproject-grid">
+          <div style="aspect-ratio: 16/10; background: linear-gradient(145deg, #b87040 0%, #58301a 45%, #1a0a05 100%); border-radius: 3px; position: relative;">
+            <span style="position: absolute; left: 14px; bottom: 12px; font-family: var(--font-mono); font-size: 10.5px; color: var(--text); background: rgba(0,0,0,0.65); padding: 4px 8px; letter-spacing: 0.06em; text-transform: uppercase;">Case 01 · iPhone Ad</span>
+          </div>
+          <div style="aspect-ratio: 16/10; background: radial-gradient(ellipse at 35% 40%, #4a3a68 0%, #1f1a35 50%, #0a0812 100%); border-radius: 3px; position: relative;">
+            <span style="position: absolute; left: 14px; bottom: 12px; font-family: var(--font-mono); font-size: 10.5px; color: var(--text); background: rgba(0,0,0,0.65); padding: 4px 8px; letter-spacing: 0.06em; text-transform: uppercase;">Case 02 · MV (Void)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 05: RESULTS -->
+  <section class="section-lg section">
+    <div class="container cs-section05-grid">
+      <div>
+        <div class="section__meta">05 / Results</div>
+        <div class="cs-bignum" style="margin-top: 24px;">80<em>%</em></div>
+        <div class="meta" style="margin-top: 20px; color: var(--text-muted);">Workflow compression</div>
+        <div class="meta meta-sm" style="margin-top: 8px;">5 days → 15 hours</div>
+      </div>
+      <div style="display: flex; flex-direction: column; justify-content: center; gap: 36px;">
+        <div class="cs-benefit">
+          <h3>路線一 — 穩定交付</h3>
+          <p>將「從零建立」的高成本階段轉換為「從可用基準點微調」。從零到六十分所需的時間,遠高於從六十分到八十分 —— 這個不對稱性,是 AI 輔助後製目前最實質的效率槓桿。</p>
+        </div>
+        <div class="cs-benefit">
+          <h3>路線二 — 速度與前沿性</h3>
+          <p>從看 ref 到完整輸出,全程不超過 15 小時。核心差異點在於自製的「鏡頭大師」—— 它不是這個案例的臨時解法,而是在後續 MV 等需要強力轉場的案例中持續部署的基礎設施。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 06: FINAL OUTPUT SHOWCASE -->
+  <section class="section">
+    <div class="container">
+      <div class="center" style="margin-bottom: 40px; display: flex; align-items: center; justify-content: center; gap: 20px;">
+        <span style="width: 40px; height: 1px; background: var(--border-strong);"></span>
+        <span class="meta">06 / Final output showcase</span>
+        <span style="width: 40px; height: 1px; background: var(--border-strong);"></span>
+      </div>
+      <div class="cs-showcase-grid">
+        <!-- Replace with your stills -->
+        <div class="cs-showcase-item" style="background: linear-gradient(145deg, #d8cab8 0%, #8a7560 35%, #3a2d22 75%, #120e0a 100%);"></div>
+        <div class="cs-showcase-item cs-showcase-item--offset" style="background: radial-gradient(ellipse at 50% 30%, #d89454 0%, #6a3818 50%, #1a0d08 100%);"></div>
+        <div class="cs-showcase-item" style="background: linear-gradient(150deg, #b87040 0%, #58301a 40%, #1a0a05 100%);"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 07: HONEST ASSESSMENT -->
+  <section class="quote-section">
+    <div class="container">
+      <div class="section__meta">07 / Honest assessment</div>
+      <h2 class="display-s" style="margin-bottom: 32px;">A boundary, <em>acknowledged.</em></h2>
+      <p style="max-width: 680px; margin: 0 auto 40px; font-size: 14px; line-height: 1.85; color: var(--text-muted); text-align: left;">
+        這套工作流最難複製的部分,不是工具,是<strong style="color: var(--text); font-weight: 500; border-bottom: 1px solid var(--border-strong); padding-bottom: 2px;">識別問題的能力與引導 AI 解決問題的判斷力</strong> —— 知道什麼時候繼續優化、什麼時候放棄這條路去造另一個工具。工具可以被教,但這個判斷需要大量時間與 AI 相處才能建立直覺。AI 的可能輸出範圍更寬 —— 上限更高,下限也更低,且任何設計都無法完全繞開抽卡的過程。
+      </p>
+      <blockquote class="quote" style="padding-top: 32px; border-top: 1px solid var(--border); font-style: italic; font-size: clamp(22px, 3vw, 32px); max-width: 680px;">
+        The value of this pipeline isn't in <em>removing</em> the dice-roll — it's in <em>systematically maximising</em> its efficiency.
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- NEXT PROJECT -->
+  <a href="void.html" class="cs-next" style="text-decoration: none;">
+    <div>
+      <div class="cs-next__label">Next project — 02 / 12</div>
+      <div class="cs-next__title">Void — <em>a hymn.</em></div>
+    </div>
+    <div class="cs-next__arrow">→</div>
+  </a>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span>Taipei, Taiwan</span>
+    <span>Sam Lin Studio © 2026</span>
+    <span>samhere723@gmail.com</span>
+  </footer>
+
+</body>
+</html>

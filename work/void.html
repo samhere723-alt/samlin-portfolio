@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Void — a hymn · Sam Lin</title>
+  <meta name="description" content="AI music video: 1 person, 5 days, replaces 5 roles × 4 weeks. Treating randomness as the sharpest creative tool.">
+  <link rel="stylesheet" href="../styles/main.css">
+  <style>
+    .cs-section04-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+    .cs-section05-grid { display: grid; grid-template-columns: 1fr 1.8fr; gap: 60px; }
+    @media (max-width: 860px) {
+      .cs-section04-grid { grid-template-columns: 1fr; gap: 28px; }
+      .cs-section05-grid { grid-template-columns: 1fr; gap: 36px; }
+      .cs-bignum { font-size: clamp(80px, 20vw, 140px); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="../index.html" class="nav__logo">Sam Lin</a>
+    <ul class="nav__links">
+      <li><a href="../index.html#work">Work</a></li>
+      <li><a href="../index.html#approach">Approach</a></li>
+      <li><a href="../index.html#bio">Bio</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+    <div class="nav__meta">2026 · TPE</div>
+  </nav>
+
+  <!-- BREADCRUMB -->
+  <div class="cs-breadcrumb">
+    <a href="../index.html#work">Work</a> &nbsp;/&nbsp; <a href="../index.html#work">Music Video</a> &nbsp;/&nbsp; <span class="cur">Void — a hymn</span>
+  </div>
+
+  <!-- TITLE BLOCK -->
+  <div class="cs-title-block">
+    <h1 class="cs-title">Void,<br><em>a hymn.</em></h1>
+    <div class="cs-meta-row">
+      <div class="cs-meta-cell"><div class="l">Year</div><div class="v">2025</div></div>
+      <div class="cs-meta-cell"><div class="l">Client</div><div class="v">Independent / Spec</div></div>
+      <div class="cs-meta-cell"><div class="l">Role</div><div class="v">Direction · AI Pipeline · Edit</div></div>
+      <div class="cs-meta-cell"><div class="l">Category</div><div class="v">Music Video · Narrative</div></div>
+    </div>
+  </div>
+
+  <!-- HERO VIDEO -->
+  <div class="cs-hero-video" style="background: radial-gradient(ellipse at 40% 45%, #5a3a78 0%, #2a1a40 35%, #100820 70%, #050210 100%);">
+    <iframe
+      src="https://www.youtube.com/embed/0yIW3V-QObc?autoplay=1&mute=1&loop=1&playlist=0yIW3V-QObc&rel=0&controls=1"
+      title="Void — a hymn"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <!-- INTRO -->
+  <div class="cs-intro">
+    <div>
+      <p>企業面對的問題是:影片內容的需求速度,早就超過傳統製程能應付的上限。品牌要持續出社群素材,創作者要給音樂配視覺 —— 但傳統動態影片光前期的建模、分鏡、角色動作,就夠把一個創意在執行途中磨死。</p>
+      <p class="hl">所以我想問一個核心問題:AI 影片生成「難以控制」的特性,能不能反過來成為讓觀眾每一秒都捨不得滑走的理由?</p>
+      <p>答案是可以,但代價很明確 —— 你必須放棄控制感,把隨機性當成最強的創作工具。這支 MV 就是那個結論的證明。一個人、五天、從音樂到完整影片。</p>
+    </div>
+    <div class="cs-side">
+      <div class="cs-side__block"><div class="cs-side__label">Duration</div><div class="cs-side__value">2 min 14 sec</div></div>
+      <div class="cs-side__block"><div class="cs-side__label">Production</div><div class="cs-side__value">5 days · 1 person</div></div>
+      <div class="cs-side__block"><div class="cs-side__label">Vs. traditional</div><div class="cs-side__value">5 roles × 4 weeks</div></div>
+      <div class="cs-side__block"><div class="cs-side__label">Stack</div><div class="cs-side__list">Gemini (Custom Gem)<br>Nano Banana · Flow<br>Kling 2.6 / 3.0<br>After Effects + Gemini<br>Suno AI · Firefly</div></div>
+      <div class="cs-side__block"><div class="cs-side__label">Original music</div><div class="cs-side__list">Generated with Suno AI<br>Edited to rhythm</div></div>
+    </div>
+  </div>
+
+  <!-- SECTION 01: BOTTLENECK -->
+  <section class="section">
+    <div class="container">
+      <div class="section__meta">01 / The bottleneck</div>
+      <h2 class="display-s">Production, <em>as death loop.</em></h2>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 32px;">
+        <div class="card">
+          <div class="card__label">The velocity problem</div>
+          <div class="card__title">需求遠超產能</div>
+          <div class="card__body">短影音的觀眾在前三秒就決定要不要繼續看,但傳統製作流程極度緩慢,完全無法應對如此高頻率的素材迭代需求。</div>
+        </div>
+        <div class="card">
+          <div class="card__label">The control trap</div>
+          <div class="card__title">穩定的死水</div>
+          <div class="card__body">最初嘗試畫好分鏡圖讓 AI 生成。畫面確實穩了,但所有的力道也跟著消失 —— 那種追求控制的穩,是毫無生命力的。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 02: DESIGN DECISION (QUOTE) -->
+  <section class="quote-section">
+    <div class="container">
+      <div class="section__meta">02 / Design decision</div>
+      <blockquote class="quote">My solution was to <em>give up control</em> — and treat randomness as the sharpest tool I had.</blockquote>
+      <p style="max-width: 640px; margin: 32px auto 0; font-size: 14px; line-height: 1.75; color: var(--text-muted); text-align: left;">
+        我換了一個完全相反的方法。透過引導式對話讓 AI 提出比我原本想的更極端、更荒謬的動態。它給的東西超出想像,我的工作從「想出這個是什麼」變成「判斷這個要不要」。甚至人物一致性的缺陷,在這支 MV 裡,人物每一秒都在輕微變形的特質,反而成了最符合歌曲氣質的風格語言。
+      </p>
+    </div>
+  </section>
+
+  <!-- SECTION 03: PIPELINE -->
+  <section class="section">
+    <div class="container">
+      <div class="section__meta">03 / Pipeline architecture</div>
+      <h2 class="display-s">A continuous <em>data flow.</em></h2>
+
+      <div class="cs-pipeline">
+        <div class="cs-phase">
+          <div class="cs-phase__label">Phase 01</div>
+          <div class="cs-phase__title">腳本與風格發想</div>
+          <div class="cs-phase__tool">
+            <div class="cs-phase__tool-name">Gemini (Custom Gem)</div>
+            <div class="cs-phase__tool-desc">客製指令,從大量概念圖中收斂 MV 視覺方向</div>
+          </div>
+          <div class="cs-phase__tool">
+            <div class="cs-phase__tool-name">Nano Banana · Flow</div>
+            <div class="cs-phase__tool-desc">A24 電影感加 3D 渲染風格驗證</div>
+          </div>
+        </div>
+
+        <div class="cs-phase cs-phase--core">
+          <div class="cs-phase__label">Phase 02 — core</div>
+          <div class="cs-phase__title">主力生成與驗證</div>
+          <div class="cs-phase__tool">
+            <div class="cs-phase__tool-name">Kling 2.6 &amp; 3.0</div>
+            <div class="cs-phase__tool-desc">高張力動態與鏡頭延展性的主力引擎</div>
+          </div>
+          <div class="cs-phase__tool">
+            <div class="cs-phase__tool-name">剪輯即驗證機制</div>
+            <div class="cs-phase__tool-desc">邊生成邊丟入剪輯,節奏對不對即刻知道</div>
+          </div>
+        </div>
+
+        <div class="cs-phase">
+          <div class="cs-phase__label">Phase 03</div>
+          <div class="cs-phase__title">後製與技術槓桿</div>
+          <div class="cs-phase__tool">
+            <div class="cs-phase__tool-name">AE + Gemini (AE Script)</div>
+            <div class="cs-phase__tool-desc">Gemini 直接生成表達式,不到五輪完成特效</div>
+          </div>
+          <div class="cs-phase__tool">
+            <div class="cs-phase__tool-name">Suno AI · Firefly</div>
+            <div class="cs-phase__tool-desc">原創配樂與畫面局部修補</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 04: EDITING AS LIVE VALIDATION -->
+  <section class="section-lg section">
+    <div class="container">
+      <div class="section__meta">04 / The technical breakthrough</div>
+      <h2 class="display-s" style="margin-bottom: 20px;">Editing, <em>as live validation.</em></h2>
+      <p style="max-width: 640px; font-size: 14px; line-height: 1.75; color: var(--text-muted); margin-bottom: 48px;">
+        AI 影片生成有一個特性繞不過:無法精確指定每段素材的長度。首尾幀雖能穩畫面,但代價是動態張力消失。這意味著整個製作邏輯必須重構。
+      </p>
+
+      <div class="cs-section04-grid">
+
+        <!-- LEFT: quote blocks -->
+        <div style="display: flex; flex-direction: column; gap: 28px;">
+          <div style="border-left: 1px solid var(--border); padding-left: 20px;">
+            <p style="font-size: 13.5px; line-height: 1.75; color: var(--text-muted);">傳統做法是先把腳本做好再製作素材 —— 生完才知道順不順。這在 AI 生成節奏不可控的前提下,等於每做一段都在賭。</p>
+          </div>
+          <div style="border-left: 2px solid var(--accent); padding-left: 20px;">
+            <p style="font-size: 13.5px; line-height: 1.75; color: var(--text);">這裡是「邊生成邊剪輯」—— 你必須把它丟進 AE 實際接上前後鏡頭,才知道節奏對不對。剪輯從最後工序,變成貫穿全程的篩選機制。</p>
+          </div>
+        </div>
+
+        <!-- RIGHT: flow diagram -->
+        <div style="border: 1px solid var(--border); padding: 32px;">
+          <div style="font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.1em; color: var(--text-dim); text-transform: uppercase; margin-bottom: 28px;">製程邏輯切換</div>
+
+          <!-- OLD flow -->
+          <div style="margin-bottom: 24px; opacity: 0.4;">
+            <div style="font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.08em; color: var(--text-dim); text-transform: uppercase; margin-bottom: 10px;">Linear</div>
+            <div style="font-size: 13px; color: var(--text-muted); text-decoration: line-through; letter-spacing: 0.02em;">企劃腳本 → 素材製作 → 後期剪輯</div>
+          </div>
+
+          <!-- NEW flow -->
+          <div style="border: 1px solid var(--border-strong); padding: 20px; background: var(--bg-card); position: relative;">
+            <div style="position: absolute; top: -1px; right: 12px; transform: translateY(-50%); font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; background: var(--accent); color: var(--bg); padding: 3px 8px;">New</div>
+            <div style="font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.08em; color: var(--accent); text-transform: uppercase; margin-bottom: 12px;">即時迴圈流程</div>
+            <div style="font-size: 15px; font-family: var(--font-display); color: var(--text); letter-spacing: -0.01em;">發想 / 生成 &nbsp;⇄&nbsp; 即時剪輯驗證</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 05: RESULTS -->
+  <section class="section-lg section">
+    <div class="container cs-section05-grid">
+      <div>
+        <div class="section__meta">05 / Results</div>
+        <div style="margin-top: 24px; display: flex; flex-direction: column; gap: 0;">
+          <div class="cs-bignum">1<em>個人</em></div>
+          <div class="cs-bignum">5<em>天</em></div>
+        </div>
+        <div class="meta" style="margin-top: 20px; color: var(--text-muted);">Replaces 5 roles × 4 weeks</div>
+        <div class="meta meta-sm" style="margin-top: 8px;">企劃 · 建模 · 動態 · 骨架 · 合成. 不是降低品質,而是邏輯換了。</div>
+      </div>
+      <div style="display: flex; flex-direction: column; justify-content: center; gap: 36px;">
+        <div class="cs-benefit">
+          <h3>價值一 — 解決資源依賴</h3>
+          <p>省掉最多時間的是建模、動作設定與特效 —— 這些在傳統流程裡門檻高、極易依賴外包。透過 Gemini 生成 AE Script,我們甚至能將技術沉澱為可重複使用的 SOP。對需要持續產出社群素材的團隊而言,能在不增加人力的前提下大幅壓縮單支影片週期。</p>
+        </div>
+        <div class="cs-benefit">
+          <h3>價值二 — 創意發想的超加速</h3>
+          <p>加速的核心不是「執行速度」,而是「發想速度」。過去腦中的畫面變成真實素材,中間有一大段技術轉譯的耗損;這套流程把耗損幾乎全砍了 —— 你描述畫面,AI 給你極端版本,你選要或不要,然後繼續。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 06: FINAL OUTPUT SHOWCASE -->
+  <section class="section">
+    <div class="container">
+      <div class="center" style="margin-bottom: 40px; display: flex; align-items: center; justify-content: center; gap: 20px;">
+        <span style="width: 40px; height: 1px; background: var(--border-strong);"></span>
+        <span class="meta">06 / Final output showcase</span>
+        <span style="width: 40px; height: 1px; background: var(--border-strong);"></span>
+      </div>
+      <div class="cs-showcase-grid">
+        <div class="cs-showcase-item" style="background: radial-gradient(ellipse at 50% 30%, #6a4080 0%, #2a1540 50%, #0a0420 100%);"></div>
+        <div class="cs-showcase-item cs-showcase-item--offset" style="background: linear-gradient(135deg, #4a3a58 0%, #1a0f28 60%, #080410 100%);"></div>
+        <div class="cs-showcase-item" style="background: radial-gradient(ellipse at 65% 50%, #3a4a78 0%, #1a2838 50%, #06101a 100%);"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 07: HONEST ASSESSMENT -->
+  <section class="quote-section">
+    <div class="container">
+      <div class="section__meta">07 / Honest assessment</div>
+      <h2 class="display-s" style="margin-bottom: 32px;">A boundary, <em>acknowledged.</em></h2>
+      <p style="max-width: 680px; margin: 0 auto 40px; font-size: 14px; line-height: 1.85; color: var(--text-muted); text-align: left;">
+        這套工作流的核心優勢是<strong style="color: var(--text); font-weight: 500;">隨機性帶來的視覺衝擊力</strong>,這跟「模板化、可嚴格複製」本質上互斥。如果需求是每週穩定產出風格一致的品牌標準素材,這不是對的工具。它真正適合的場景是短影音、MV、需要快速抓住注意力的社群內容 —— 在這個範疇內,它目前沒有等價的替代方案。
+      </p>
+      <blockquote class="quote" style="padding-top: 32px; border-top: 1px solid var(--border);">
+        The randomness that makes this work — <em>isn't what brand work needs.</em> Know which problem you're solving.
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- NEXT PROJECT -->
+  <a href="iphone.html" class="cs-next" style="text-decoration: none;">
+    <div>
+      <div class="cs-next__label">Next project — 03 / 12</div>
+      <div class="cs-next__title">iPhone — <em>Lumière.</em></div>
+    </div>
+    <div class="cs-next__arrow">→</div>
+  </a>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span>Taipei, Taiwan</span>
+    <span>Sam Lin Studio © 2026</span>
+    <span>samhere723@gmail.com</span>
+  </footer>
+
+</body>
+</html>
