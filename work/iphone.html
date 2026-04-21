@@ -6,18 +6,6 @@
   <title>iPhone — Lumière · Sam Lin</title>
   <meta name="description" content="AI-driven product animation: workflow rebuild. Traditional 5-day pipeline compressed to 15 hours.">
   <link rel="stylesheet" href="../styles/main.css">
-  <style>
-    .cs-lensmaster-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 28px; border: 1px solid var(--border); padding: 36px; margin-bottom: 36px; align-items: center; }
-    .cs-ab-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
-    .cs-crossproject-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-    .cs-section05-grid { display: grid; grid-template-columns: 1fr 1.8fr; gap: 60px; }
-    @media (max-width: 860px) {
-      .cs-lensmaster-grid { grid-template-columns: 1fr; padding: 24px; }
-      .cs-ab-grid { grid-template-columns: 1fr; }
-      .cs-crossproject-grid { grid-template-columns: 1fr; }
-      .cs-section05-grid { grid-template-columns: 1fr; gap: 36px; }
-    }
-  </style>
 </head>
 <body>
 
@@ -168,7 +156,7 @@
       </div>
 
       <!-- UI + description -->
-      <div class="cs-lensmaster-grid">
+      <div style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 28px; border: 1px solid var(--border); padding: 36px; margin-bottom: 36px; align-items: center;">
         <div>
           <h3 style="font-family: var(--font-display); font-size: 24px; letter-spacing: -0.02em; margin-bottom: 16px;">後台介面與邏輯</h3>
           <p style="font-size: 13.5px; line-height: 1.75; color: var(--text-muted); margin-bottom: 14px;">建立於 Google AI Studio 的中間層應用。讀取首尾幀視覺後,套用:</p>
@@ -187,7 +175,7 @@
         <p style="font-size: 12px; color: var(--text-dim);">同樣的首尾圖 · 同樣的 Kling 模型 · 不同的 prompt 層</p>
       </div>
 
-      <div class="cs-ab-grid">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
         <div>
           <div style="display: flex; justify-content: space-between; margin-bottom: 12px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: #8a5050;">
             <span>Without Lens Master</span><span>✕</span>
@@ -211,7 +199,7 @@
         <div class="center" style="margin-bottom: 24px;">
           <h3 style="font-family: var(--font-display); font-size: 18px; letter-spacing: -0.01em; color: var(--text);">工具已封裝 · 跨案例部署驗證</h3>
         </div>
-        <div class="cs-crossproject-grid">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
           <div style="aspect-ratio: 16/10; background: linear-gradient(145deg, #b87040 0%, #58301a 45%, #1a0a05 100%); border-radius: 3px; position: relative;">
             <span style="position: absolute; left: 14px; bottom: 12px; font-family: var(--font-mono); font-size: 10.5px; color: var(--text); background: rgba(0,0,0,0.65); padding: 4px 8px; letter-spacing: 0.06em; text-transform: uppercase;">Case 01 · iPhone Ad</span>
           </div>
@@ -225,7 +213,7 @@
 
   <!-- SECTION 05: RESULTS -->
   <section class="section-lg section">
-    <div class="container cs-section05-grid">
+    <div class="container" style="display: grid; grid-template-columns: 1fr 1.8fr; gap: 60px;">
       <div>
         <div class="section__meta">05 / Results</div>
         <div class="cs-bignum" style="margin-top: 24px;">80<em>%</em></div>

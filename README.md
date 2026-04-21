@@ -51,6 +51,17 @@ samlin-portfolio/
 ### Content philosophy
 Content is preserved from Sam's original Tailwind-based case studies in `/work/iphone.html` and will be mirrored in `/work/void.html`. **Do NOT rewrite the Chinese prose** — it's been carefully crafted by Sam. Translate structure, preserve voice.
 
+### Home page section order
+1. Hero — Inevitable, not generated
+2. `#work` Section 01 — Showcase (marquee)
+3. Section 02 — Browse by category (filter grid)
+4. `#approach` Section 03 — Approach (quote + tool stack)
+5. `#bio` Section 04 — About (portrait + prose + 3 numbered practice areas)
+6. `#contact` Section 05 — Let's talk
+7. Footer
+
+All four nav anchors (`#work`, `#approach`, `#bio`, `#contact`) have matching `id` attributes — verify this does not break when adding new sections.
+
 ### Known TODOs
 1. Build `work/void.html` using `work/iphone.html` as structural template. Content is in prompt `BUILD_PROMPTS.md`.
 2. Replace placeholder gradient thumbnails with real stills once Sam has them.
