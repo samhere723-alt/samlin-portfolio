@@ -115,15 +115,15 @@
       <p style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; color: var(--text-dim); text-transform: uppercase; margin-top: 8px;">精選作品 · 依分類瀏覽</p>
 
       <div class="filter-row">
-        <button class="pill pill--active">All · 48</button>
-        <button class="pill">Commercial · 19</button>
-        <button class="pill">AI Narrative · 12</button>
-        <button class="pill">Music Video · 9</button>
-        <button class="pill">Template Sys · 8</button>
+        <button class="pill pill--active" data-filter="all">All · 48</button>
+        <button class="pill" data-filter="Commercial">Commercial · 19</button>
+        <button class="pill" data-filter="AI Narrative">AI Narrative · 12</button>
+        <button class="pill" data-filter="Music Video">Music Video · 9</button>
+        <button class="pill" data-filter="Template Sys">Template Sys · 8</button>
       </div>
 
-      <div class="work-grid">
-        <a href="work/iphone.html" class="work-item">
+      <div class="work-grid" id="work-grid">
+        <a href="work/iphone.html" class="work-item" data-category="Commercial">
           <div class="work-item__thumb" style="background: linear-gradient(145deg, #d8cab8 0%, #8a7560 35%, #3a2d22 75%, #120e0a 100%);">
             <span class="work-item__tag">Commercial</span>
           </div>
@@ -133,7 +133,7 @@
           </div>
         </a>
 
-        <a href="work/void.html" class="work-item">
+        <a href="work/void.html" class="work-item" data-category="Music Video">
           <div class="work-item__thumb" style="background: radial-gradient(ellipse at 60% 50%, #4a3a68 0%, #1f1a35 50%, #0a0812 100%);">
             <span class="work-item__tag">Music Video</span>
           </div>
@@ -143,9 +143,9 @@
           </div>
         </a>
 
-        <a href="#" class="work-item">
+        <a href="#" class="work-item" data-category="AI Narrative">
           <div class="work-item__thumb" style="background: linear-gradient(160deg, #c9802a 0%, #6a3818 40%, #281208 100%);">
-            <span class="work-item__tag">Narrative</span>
+            <span class="work-item__tag">AI Narrative</span>
           </div>
           <div class="work-item__info">
             <div class="work-item__title">The Last Allowed</div>
@@ -153,7 +153,7 @@
           </div>
         </a>
 
-        <a href="#" class="work-item">
+        <a href="#" class="work-item" data-category="Commercial">
           <div class="work-item__thumb" style="background: linear-gradient(150deg, #b87040 0%, #58301a 40%, #1a0a05 100%);">
             <span class="work-item__tag">Commercial</span>
           </div>
@@ -163,7 +163,7 @@
           </div>
         </a>
 
-        <a href="#" class="work-item">
+        <a href="#" class="work-item" data-category="Template Sys">
           <div class="work-item__thumb" style="background: linear-gradient(175deg, #3a3a42 0%, #1a1a20 50%, #0a0a0e 100%);">
             <span class="work-item__tag">Template Sys</span>
           </div>
@@ -173,7 +173,7 @@
           </div>
         </a>
 
-        <a href="#" class="work-item">
+        <a href="#" class="work-item" data-category="Music Video">
           <div class="work-item__thumb" style="background: radial-gradient(ellipse at 35% 50%, #1a5a78 0%, #0a2838 50%, #040e18 100%);">
             <span class="work-item__tag">Music Video</span>
           </div>
@@ -248,11 +248,10 @@
           <div style="font-family: var(--font-display); font-style: italic; font-size: 24px; color: var(--accent);">01</div>
           <div>
             <h3 style="font-family: var(--font-display); font-size: 22px; letter-spacing: -0.02em; margin-bottom: 6px;">商業直覺</h3>
-            <p style="font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.08em; color: var(--accent); text-transform: uppercase; margin-bottom: 14px;">Commercial instinct</p>
-            <p style="font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.08em; color: var(--text-dim); text-transform: uppercase;">8 years · PowerDirector templates</p>
+            <p style="font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.08em; color: var(--accent); text-transform: uppercase;">Commercial instinct</p>
           </div>
           <div>
-            <p style="font-size: 13.5px; line-height: 1.75; color: var(--text-muted); margin-bottom: 14px;">八年設計商業模板教會了我大部分 AI 設計師沒有的東西:藝術品與產品之間的落差。真正好的商業作品不只是漂亮 —— 它必須<strong style="color: var(--text); font-weight: 500;">可重複、可擴展、能在真實限制下為真實使用者所用</strong>。我把那套紀律帶進每一條 AI 工作流。</p>
+            <p style="font-size: 13.5px; line-height: 1.75; color: var(--text-muted);">八年商業模板設計讓我懂一件事:好作品不只是漂亮 —— 它必須<strong style="color: var(--text); font-weight: 500;">可重複、可擴展、能真實交付</strong>。我把這套標準帶進每一條 AI 工作流。</p>
           </div>
         </div>
 
@@ -261,11 +260,10 @@
           <div style="font-family: var(--font-display); font-style: italic; font-size: 24px; color: var(--accent);">02</div>
           <div>
             <h3 style="font-family: var(--font-display); font-size: 22px; letter-spacing: -0.02em; margin-bottom: 6px;">AI 影像生成</h3>
-            <p style="font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.08em; color: var(--accent); text-transform: uppercase; margin-bottom: 14px;">AI image pipeline</p>
-            <p style="font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.08em; color: var(--text-dim); text-transform: uppercase; line-height: 1.7;">Midjourney<br>Stable Diffusion<br>Nano Banana · Flux</p>
+            <p style="font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.08em; color: var(--accent); text-transform: uppercase;">AI image pipeline</p>
           </div>
           <div>
-            <p style="font-size: 13.5px; line-height: 1.75; color: var(--text-muted); margin-bottom: 14px;">從單一首幀到一整支 campaign 的 key visual,負責把品牌概念翻譯成像素。熟悉 prompt iteration、style consistency 維持、i2i 抽卡工作流 —— 知道什麼時候該讓 AI 跑自由、什麼時候該用 reference 綁死。</p>
+            <p style="font-size: 13.5px; line-height: 1.75; color: var(--text-muted);">從單張首幀到整支 campaign key visual。熟悉 prompt iteration、style consistency、i2i 抽卡工作流 —— 知道什麼時候讓 AI 自由跑、什麼時候用 reference 綁死。</p>
           </div>
         </div>
 
@@ -274,11 +272,10 @@
           <div style="font-family: var(--font-display); font-style: italic; font-size: 24px; color: var(--accent);">03</div>
           <div>
             <h3 style="font-family: var(--font-display); font-size: 22px; letter-spacing: -0.02em; margin-bottom: 6px;">AI 動態影像</h3>
-            <p style="font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.08em; color: var(--accent); text-transform: uppercase; margin-bottom: 14px;">AI motion pipeline</p>
-            <p style="font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.08em; color: var(--text-dim); text-transform: uppercase; line-height: 1.7;">Kling 2.6 · 3.0<br>Veo 3 · Vidu<br>After Effects + Gemini</p>
+            <p style="font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.08em; color: var(--accent); text-transform: uppercase;">AI motion pipeline</p>
           </div>
           <div>
-            <p style="font-size: 13.5px; line-height: 1.75; color: var(--text-muted); margin-bottom: 14px;">把 AI 生成的原料(首尾幀、角色、場景)接成電影級的動態影像。熟悉 i2v 運鏡控制、跨 shot 連續性、「剪輯即驗證」工作流。合成階段用 AE 處理 grading、時序、特效 —— Gemini 協助直接生成 AE 表達式,縮短技術轉譯。</p>
+            <p style="font-size: 13.5px; line-height: 1.75; color: var(--text-muted);">把首尾幀、角色、場景接成電影級動態。熟悉 i2v 運鏡控制、跨 shot 連續性、「剪輯即驗證」流程。AE 合成階段用 Gemini 直接生成表達式,縮短技術轉譯。</p>
           </div>
         </div>
 
@@ -287,11 +284,10 @@
           <div style="font-family: var(--font-display); font-style: italic; font-size: 24px; color: var(--accent);">04</div>
           <div>
             <h3 style="font-family: var(--font-display); font-size: 22px; letter-spacing: -0.02em; margin-bottom: 6px;">AI 工作流系統化</h3>
-            <p style="font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.08em; color: var(--accent); text-transform: uppercase; margin-bottom: 14px;">Workflow systemisation</p>
-            <p style="font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.08em; color: var(--text-dim); text-transform: uppercase; line-height: 1.7;">Gemini Custom Gem<br>Google AI Studio<br>Self-built tools</p>
+            <p style="font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.08em; color: var(--accent); text-transform: uppercase;">Workflow systemisation</p>
           </div>
           <div>
-            <p style="font-size: 13.5px; line-height: 1.75; color: var(--text-muted); margin-bottom: 14px;">這是我跟其他 AI 設計師最大的差異。<strong style="color: var(--text); font-weight: 500;">我不只會用工具,我在工具失效的地方自己造工具</strong> —— 例如用 Google AI Studio 建「鏡頭大師」解決 i2v 運鏡穩定性(見 iPhone case),或用 Gemini Custom Gem 封裝跨案例可重用的分鏡 SOP(見 Void case)。工具封裝後跨專案部署驗證,不是一次性解法。</p>
+            <p style="font-size: 13.5px; line-height: 1.75; color: var(--text-muted);"><strong style="color: var(--text); font-weight: 500;">工具失效的地方,我自己造工具</strong> —— 「鏡頭大師」解決 i2v 運鏡穩定性,Gemini Custom Gem 封裝可重用分鏡 SOP。工具封裝後跨案例部署,不是一次性解法。</p>
           </div>
         </div>
       </div>
@@ -310,6 +306,28 @@
     <span>Sam Lin Studio © 2026</span>
     <span>Updated — April</span>
   </footer>
+
+  <script>
+    // Filter pills
+    const pills = document.querySelectorAll('.filter-row .pill');
+    const items = document.querySelectorAll('#work-grid .work-item');
+
+    pills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        pills.forEach(p => p.classList.remove('pill--active'));
+        pill.classList.add('pill--active');
+
+        const filter = pill.dataset.filter;
+        items.forEach(item => {
+          if (filter === 'all' || item.dataset.category === filter) {
+            item.style.display = '';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
 
 </body>
 </html>
