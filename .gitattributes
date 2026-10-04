@@ -1,0 +1,2 @@
+# Keep the approved static deployment byte-for-byte, including Windows line endings.
+docs/** -text

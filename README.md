@@ -1,3 +1,13 @@
+## Current published portfolio
+
+Website: https://samhere723-alt.github.io/samlin-portfolio/
+
+The current approved Traditional Chinese portfolio is in `docs/`, published by GitHub Pages from `main:/docs`. It contains the new headline and V9 60-second Showreel. All asset paths are relative. Open `docs/index.html` locally or serve `docs/` with any static web server.
+
+The older root HTML, styles, and notes below are retained as a previous implementation. Local source footage, private work notes, unused media and QA files are not part of the deployment.
+
+---
+
 # Sam Lin — Portfolio Site
 
 AI Visual & Motion Designer portfolio. Cinematic editorial aesthetic.
