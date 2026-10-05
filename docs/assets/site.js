@@ -39,6 +39,17 @@
   /* 開場 reel:減少動態時不自動播 */
   const reel = document.getElementById('reelLoop');
   if (reel && reduce) { reel.removeAttribute('autoplay'); reel.pause(); }
+  // Keep the real cover visible until the opening typography has appeared.
+  if (reel && !reduce) {
+    const revealReel = () => {
+      if (reel.currentTime < 1.5 || reel.readyState < 2) return;
+      reel.closest('.reel-frame').classList.add('ready');
+      reel.removeEventListener('timeupdate', revealReel);
+    };
+    reel.addEventListener('timeupdate', revealReel);
+    revealReel();
+  }
+
 
   /* 預覽片段 */
   function ensureVideo(host, src) {

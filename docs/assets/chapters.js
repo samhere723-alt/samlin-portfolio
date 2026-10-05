@@ -13,8 +13,8 @@
 
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   function link(ep, ch) {
-    if (ep.kind === 'yt') return { href: 'https://www.youtube.com/watch?v=' + ep.src + '&t=' + ch.t + 's', text: '▶ 聽原話：YouTube 從 ' + ch.ts + ' 開始' };
-    return { href: ep.src, text: '▶ 聽原話：到 Firstory 聽這集，從 ' + ch.ts + ' 開始' };
+    if (ep.kind === 'yt') return { href: 'https://www.youtube.com/watch?v=' + ep.src + '&t=' + ch.t + 's', text: '原節目 · ' + ch.ts };
+    return { href: ep.src, text: '原節目 · ' + ch.ts };
   }
 
   root.innerHTML =
@@ -42,7 +42,7 @@
     ep.chapters.forEach(function (c, k) { if (c.n === START[ep.key]) start = k; });
     var a = ep.kind === 'yt' ? 'https://www.youtube.com/watch?v=' + ep.src : ep.src;
     src.innerHTML = '出處：' + esc(ep.show) + ' ' + esc(ep.ep) + '〈<a href="' + a + '" target="_blank" rel="noopener">' + esc(TITLE[ep.key] || ep.title) +
-      '</a>〉。原話請到原節目聽。';
+      '</a>〉';
     showCh(start, false);
   }
 
@@ -67,7 +67,7 @@
         (Array.isArray(v) ? '<ul>' + v.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>' : '<p>' + esc(v) + '</p>') + '</section>';
     });
     var miss = FIELDS.filter(function (f) { return !c[f[0]]; }).map(function (f) { return f[1]; });
-    if (miss.length) html += '<p class="ch-miss">這一章沒有「' + miss.join('」「') + '」。</p>';
+
     html += '<nav class="ch-nav"><button type="button" class="ch-prev"' + (k === 0 ? ' disabled' : '') + '>← 上一章</button>' +
       '<span>' + (k + 1) + ' / ' + ep.chapters.length + '</span>' +
       '<button type="button" class="ch-next"' + (k === ep.chapters.length - 1 ? ' disabled' : '') + '>下一章 →</button></nav>';

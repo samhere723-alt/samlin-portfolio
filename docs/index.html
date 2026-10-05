@@ -24,11 +24,11 @@
   <div class="wrap">
     <a class="brand" href="#hero" aria-label="Sam Lin 回到頂端"><svg class="mark"><use href="#m"/></svg><span>SAM <span class="lin">LIN</span></span></a>
     <nav class="nav" aria-label="主選單">
-      <a href="#cases">案子</a>
+      <a href="#cases">精選</a>
       <a href="#works" class="opt">作品</a>
-      <a href="#longform" class="opt">長內容</a>
+      <a href="#longform" class="opt">互動</a>
       <a href="#tools" class="opt">工具</a>
-      <a href="#career" class="opt">經歷</a>
+      <a href="#career">經歷</a>
       <a href="#contact">聯絡</a>
     </nav>
   </div>
@@ -37,39 +37,25 @@
 <main>
 <section class="hero" id="hero">
   <div class="wrap">
-    <div class="hero-head">
-      <div>
-        <p class="who label"><svg class="mark spin"><use href="#m"/></svg>Sam Lin · 台北</p>
+    <div class="hero-layout">
+      <div class="hero-intro">
+        <p class="who label"><svg class="mark spin"><use href="#m"/></svg>動態設計 · 商業影片 · AI 動畫</p>
         <h1 id="h1"><span class="l1">把重點說清楚，</span><span class="l2">把影片做好看。</span></h1>
+        <p class="lede">訊連科技｜PowerDirector、MyEdit<br>企劃、分鏡、生成與剪接。</p>
+        <div class="hero-actions"><a class="hero-cta" href="#cases">看精選作品 <span aria-hidden="true">↗</span></a><a href="#contact">聯絡我 →</a></div>
       </div>
-      <svg class="mark hero-mark spin" aria-hidden="true"><use href="#m"/></svg>
-    </div>
-    <p class="lede">在訊連製作 PowerDirector、MyEdit 的特效、模板與功能影片。近兩年以 AI 協作，完成企劃、分鏡、生成與剪接。</p>
-
     <div class="reel">
       <div class="reel-frame">
-        <video id="reelLoop" src="media/reel60_v10_720.mp4" poster="media/poster/reel60_v10.jpg" autoplay muted loop playsinline preload="auto" aria-label="60 秒作品集剪輯，靜音循環播放"></video>
-        <button class="play-btn" type="button" data-full="media/reel60_v10_1080.mp4" data-ratio="1.7778" data-title="60 秒作品集剪輯" data-note="這兩年的作品：運動、MV、角色動畫、鬼片範本、產品片、影片轉影片，精選成 60 秒。"><span class="tri"></span>有聲播放</button>
+        <video id="reelLoop" src="media/reel60_v10_720.mp4" poster="img/showreel_cover_20261005.jpg" autoplay muted loop playsinline preload="auto" aria-label="60 秒作品集剪輯，靜音循環播放"></video>
       </div>
-      <div class="reel-bar"><p>60 秒精選作品 · 預設靜音</p></div>
+      <div class="reel-bar">
+        <p>SHOWREEL · 60 SEC</p>
+        <button class="play-btn" type="button" data-full="media/reel60_v10_1080.mp4" data-ratio="1.7778" data-title="60 秒作品集剪輯" data-note="商業影片、動態設計與 AI 動畫精選。"><span class="tri" aria-hidden="true"></span>播放完整版</button>
+      </div>
     </div>
 
-    <div class="proofs">
-      <div class="proof-grid">
-        <a class="proof" href="#case-mouse">
-          <div class="media" data-autopv="media/pv/w_mouse.mp4"><img src="media/poster/w_mouse.jpg" alt="C7 滑鼠的磁力滾輪特寫" loading="lazy"></div>
-          <div class="txt"><b>三個賣點，一支 <span class="nw">30 秒</span>商品片</b><span class="arrow" aria-hidden="true">→</span></div>
-        </a>
-        <a class="proof" href="#longform">
-          <div class="media"><img src="img/fin_chapter_clear.jpg" alt="章節卡：清流君 EP33 第 3 章，左邊是章節列表，右邊是他的主張" loading="lazy" style="object-position: 0 0"></div>
-          <div class="txt"><b>把長節目，變成判斷工具</b><span class="arrow" aria-hidden="true">→</span></div>
-        </a>
-        <a class="proof" href="#case-path">
-          <div class="media" data-autopv="media/pv/w_lantern.mp4"><img src="media/poster/w_lantern.jpg" alt="3D 動畫少女在燈籠水鄉奔跑" loading="lazy"></div>
-          <div class="txt"><b>兩條路線，一場追逐</b><span class="arrow" aria-hidden="true">→</span></div>
-        </a>
-      </div>
     </div>
+
   </div>
 </section>
 
@@ -78,8 +64,8 @@
 <section class="sec" id="cases">
   <div class="wrap">
     <div class="sec-head">
-      <p class="label"><svg class="mark"><use href="#m"/></svg>案子</p>
-      <h2>四個案子，從想法到成片</h2>
+      <p class="label"><svg class="mark"><use href="#m"/></svg>SELECTED WORK</p>
+      <h2>精選專案</h2>
     </div>
 
     <div class="cases">
@@ -87,23 +73,20 @@
       <article class="case" id="case-path">
         <div class="case-media">
           <div class="reelrow">
-            <button class="clip" type="button" style="--ar:1.7778" data-pv="media/pv/w_lantern.mp4" data-full="media/w_lantern.mp4" data-ratio="1.7778" data-title="燈籠水鄉的追逐（15 秒動畫）" data-note="一次生成 15 秒。主角的路線畫亮青色，追兵畫洋紅。">
+            <button class="clip" type="button" style="--ar:1.7778" data-pv="media/pv/w_lantern.mp4" data-full="media/w_lantern.mp4" data-ratio="1.7778" data-title="燈籠水鄉的追逐（15 秒動畫）" data-note="MyEdit 路徑範本 · 15 秒角色動畫。">
               <img src="media/poster/w_lantern.jpg" alt="手拿發光卷軸的動畫少女，背景是滿天燈籠" loading="lazy"><span class="cap"><span class="dot"></span>15 秒動畫</span>
             </button>
-            <button class="clip" type="button" style="--ar:.5625" data-pv="media/pv/w_explainer.mp4" data-full="media/w_explainer.mp4" data-ratio=".5625" data-title="MyEdit 路徑範本廣告（30 秒直式）" data-note="虛擬主持人講、畫面示範，全英文。畫面已定稿，配樂和音效還沒上。">
-              <img src="media/poster/w_explainer.jpg" alt="直式廣告畫面，靜態圖上畫了一條綠色路線" loading="lazy"><span class="cap"><span class="dot"></span>30 秒廣告</span>
+            <button class="clip" type="button" style="--ar:.5625" data-pv="media/pv/w_explainer.mp4" data-full="media/w_explainer.mp4" data-ratio=".5625" data-title="MyEdit 路徑範本廣告（30 秒直式）" data-note="MyEdit 功能介紹 · 30 秒英文直式廣告。">
+              <img src="media/poster/w_explainer.jpg" alt="直式廣告畫面，靜態圖上畫了一條綠色路線" loading="lazy"><span class="cap"><span class="dot"></span>30 秒</span>
             </button>
           </div>
         </div>
         <div class="case-text">
           <p class="case-no">01</p>
-          <h3>兩條路線，一場追逐</h3>
-          <ul class="meta"><li>2026</li><li>MyEdit 範本</li><li>15 秒動畫＋30 秒廣告</li><li>Seedance 2.0</li></ul>
-          <dl class="beats4">
-            <div><dt>問題</dt><dd>要讓使用者畫路線，角色就照著跑；第一版卻只剩鏡頭穿越空城。</dd></div>
-            <div><dt>解法</dt><dd>先鎖定角色正背面，以俯視斜角讓路線清楚可見。主角路線用青色、追兵用洋紅，避開暖橘場景，一次生成 15 秒完整追逐。</dd></div>
-          </dl>
-          <p class="role">我負責企劃、規則與定稿；和 Claude 協作 prompt、合成腳本，Seedance 2.0 生成畫面。</p>
+          <h3>路徑動畫與功能廣告</h3>
+          <ul class="meta"><li>MyEdit 範本</li><li>15 秒動畫＋30 秒廣告</li></ul>
+          <p class="case-purpose">用於 MyEdit 路徑動畫功能示範與直式廣告。</p>
+          <p class="role"><span>負責</span> 企劃、生成規則、內容定稿</p>
         </div>
       </article>
 
@@ -111,20 +94,17 @@
       <article class="case flip" id="case-mouse">
         <div class="case-media">
           <div class="reelrow">
-            <button class="clip" type="button" style="--ar:1" data-pv="media/pv/w_mouse.mp4" data-full="media/w_mouse.mp4" data-ratio="1" data-title="C7 滑鼠（30 秒，1:1）" data-note="Seedance 2.5 的商品片範例，品牌是虛構的。手指撥滾輪，鏡頭就跟著鑽進去拆開。">
+            <button class="clip" type="button" style="--ar:1" data-pv="media/pv/w_mouse.mp4" data-full="media/w_mouse.mp4" data-ratio="1" data-title="C7 滑鼠概念片" data-note="C7 商品概念片 · 30 秒。">
               <img src="media/poster/w_mouse.jpg" alt="手放在深灰色滑鼠上，金色滾輪，機身邊緣透出琥珀色光" loading="lazy"><span class="cap"><span class="dot"></span>30 秒 · 1:1</span>
             </button>
           </div>
         </div>
         <div class="case-text">
           <p class="case-no">02</p>
-          <h3>滑鼠的三個賣點，30 秒說清楚</h3>
-          <ul class="meta"><li>2026</li><li>Seedance 2.5 範例片</li><li>30 秒</li><li>1:1</li></ul>
-          <dl class="beats4">
-            <div><dt>問題</dt><dd>虛構品牌 C7 的商品範例：30 秒內講清楚賣點，讓零件拆解對應使用動作。</dd></div>
-            <div><dt>解法</dt><dd>用手的動作帶鏡頭：撥滾輪、放大紋路、拆解零件，再呈現按鍵與感測器。規格跟著對應零件出現。</dd></div>
-          </dl>
-          <p class="role">我負責企劃、分鏡與版本取捨；和 Claude 協作 prompt，Seedance 2.5 生成畫面。</p>
+          <h3>C7 滑鼠商品片</h3>
+          <ul class="meta"><li>概念商品片</li><li>30 秒 · 1:1</li></ul>
+          <p class="case-purpose">C7 概念商品示範，呈現滑鼠三項功能。</p>
+          <p class="role"><span>負責</span> 企劃、分鏡、畫面選定</p>
         </div>
       </article>
 
@@ -132,28 +112,25 @@
       <article class="case" id="case-dance">
         <div class="case-media">
           <div class="reelrow">
-            <button class="clip" type="button" style="--ar:1.7778" data-pv="media/pv/w_mv_coat.mp4" data-full="media/w_mv_coat.mp4" data-ratio="1.7778" data-title="K-pop 舞蹈 MV：光井" data-note="角色三視圖＋空景＋動作參考片，Seedance 2.0 參考生影片。">
+            <button class="clip" type="button" style="--ar:1.7778" data-pv="media/pv/w_mv_coat.mp4" data-full="media/w_mv_coat.mp4" data-ratio="1.7778" data-title="K-pop 舞蹈 MV：光井" data-note="MyEdit 舞蹈 MV 範本 · 光井場景。">
               <img src="media/poster/w_mv_coat.jpg" alt="穿螢光綠毛外套的舞者站在廢墟光井下" loading="lazy"><span class="cap"><span class="dot"></span>光井</span>
             </button>
           </div>
           <div class="reelrow">
-            <button class="clip" type="button" style="--ar:1.7778" data-pv="media/pv/w_mv_dance.mp4" data-full="media/w_mv_dance.mp4" data-ratio="1.7778" data-title="K-pop 舞蹈 MV：舞蹈教室" data-note="同一個流程，換一個場景和角色。">
-              <img src="media/poster/w_mv_dance.jpg" alt="夜景高樓裡的舞蹈教室，一位舞者" loading="lazy"><span class="cap"><span class="dot"></span>舞蹈教室</span>
+            <button class="clip" type="button" style="--ar:1.7778" data-pv="media/pv/w_mv_dance.mp4" data-full="media/w_mv_dance.mp4" data-ratio="1.7778" data-title="K-pop 舞蹈 MV：舞蹈教室" data-note="MyEdit 舞蹈 MV 範本 · 舞蹈教室。">
+              <img src="media/poster/w_mv_dance.jpg" alt="夜景高樓裡的舞蹈教室，一位舞者" loading="lazy"><span class="cap"><span class="dot"></span>教室</span>
             </button>
-            <button class="clip" type="button" style="--ar:1.7778" data-pv="media/pv/w_mv_close.mp4" data-full="media/w_mv_close.mp4" data-ratio="1.7778" data-title="K-pop 舞蹈 MV：近景" data-note="先有分鏡再重新生成的版本。">
+            <button class="clip" type="button" style="--ar:1.7778" data-pv="media/pv/w_mv_close.mp4" data-full="media/w_mv_close.mp4" data-ratio="1.7778" data-title="K-pop 舞蹈 MV：近景" data-note="MyEdit 舞蹈 MV 範本 · 角色近景。">
               <img src="media/poster/w_mv_close.jpg" alt="舞者近景，綠色毛外套" loading="lazy"><span class="cap"><span class="dot"></span>近景</span>
             </button>
           </div>
         </div>
         <div class="case-text">
           <p class="case-no">03</p>
-          <h3>先定動作，再換角色與場景</h3>
-          <ul class="meta"><li>2026</li><li>MyEdit 範本</li><li>12–15 秒 ×3</li><li>Seedance 2.0</li></ul>
-          <dl class="beats4">
-            <div><dt>問題</dt><dd>舞蹈與運鏡要好看，角色也要跨鏡頭一致。</dd></div>
-            <div><dt>解法</dt><dd>先用未上材質的 3D 真人模型生成動作參考，再加入角色三視圖與空景，讓 Seedance 參考生成 MV。</dd></div>
-          </dl>
-          <p class="role">我定流程、造型與版本取捨；和 Claude 協作 prompt，Seedance 2.0 生成畫面。</p>
+          <h3>K-pop 舞蹈 MV</h3>
+          <ul class="meta"><li>MyEdit 範本</li><li>12–15 秒 ×3</li></ul>
+          <p class="case-purpose">呈現不同角色與場景的舞蹈 MV 範本。</p>
+          <p class="role"><span>負責</span> 製作流程、角色造型、內容定稿</p>
         </div>
       </article>
 
@@ -161,25 +138,46 @@
       <article class="case flip" id="case-horror">
         <div class="case-media">
           <div class="reelrow">
-            <button class="clip" type="button" style="--ar:.75" data-pv="media/pv/w_horror_east.mp4" data-full="media/w_horror_east.mp4" data-ratio=".75" data-title="萬聖節範本：東方版" data-note="雨夜的公車站。一張照片，一次生成 10 秒。">
+            <button class="clip" type="button" style="--ar:.75" data-pv="media/pv/w_horror_east.mp4" data-full="media/w_horror_east.mp4" data-ratio=".75" data-title="萬聖節範本：東方版" data-note="萬聖節照片動畫範本 · 東方版。">
               <img src="media/poster/w_horror_east.jpg" alt="雨夜公車站，穿黃色雨衣、撐透明傘的女生" loading="lazy"><span class="cap"><span class="dot"></span>東方版</span>
             </button>
-            <button class="clip" type="button" style="--ar:.75" data-pv="media/pv/w_horror_west.mp4" data-full="media/w_horror_west.mp4" data-ratio=".75" data-title="萬聖節範本：西方版" data-note="保齡球館。最後一刀收在偷看主角的視角。">
+            <button class="clip" type="button" style="--ar:.75" data-pv="media/pv/w_horror_west.mp4" data-full="media/w_horror_west.mp4" data-ratio=".75" data-title="萬聖節範本：西方版" data-note="萬聖節照片動畫範本 · 西方版。">
               <img src="media/poster/w_horror_west.jpg" alt="保齡球館裡的三個朋友" loading="lazy"><span class="cap"><span class="dot"></span>西方版</span>
             </button>
           </div>
         </div>
         <div class="case-text">
           <p class="case-no">04</p>
-          <h3>一張照片，生成 10 秒鬼片</h3>
-          <ul class="meta"><li>2026</li><li>萬聖節範本</li><li>10 秒 ×2</li><li>3:4</li><li>Seedance 2.0</li></ul>
-          <dl class="beats4">
-            <div><dt>問題</dt><dd>使用者只給一張照片，未必有正臉；模型容易亂加元素，鏡頭也單調。</dd></div>
-            <div><dt>解法</dt><dd>一次生成 10 秒，以 4–6 個鏡頭、手持晃動與甩鏡製造驚嚇。第三鏡避開正臉，結尾留在偷看主角的視角。</dd></div>
-          </dl>
-          <p class="role">我定規則與鏡頭結構；和 Claude 協作 system prompt，Seedance 2.0 生成畫面。</p>
+          <h3>萬聖節照片動畫</h3>
+          <ul class="meta"><li>節慶範本</li><li>10 秒 ×2</li></ul>
+          <p class="case-purpose">將單張照片延伸為 10 秒恐怖情境短片。</p>
+          <p class="role"><span>負責</span> 生成規則、鏡頭設計</p>
         </div>
       </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="career">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="label"><svg class="mark"><use href="#m"/></svg>經歷</p>
+      <h2>經歷與專長</h2>
+    </div>
+    <div class="career">
+      <div>
+        <p>訊連科技<br>PowerDirector · PhotoDirector · MyEdit</p>
+        <div class="tools">
+          <p class="label">製作工具</p>
+          <div class="chips"><span>After Effects</span><span>PowerDirector</span><span>Illustrator</span><span>Seedance</span><span>Kling</span><span>Veo</span><span>Claude Code</span></div>
+        </div>
+      </div>
+      <ol class="tl">
+        <li><span class="yr">2019–2025</span><div><b class="q">特效與影片模板</b><p>特效素材、行銷模板與動態字卡。</p></div></li>
+        <li><span class="yr">2023–2024</span><div><b class="q">AI 功能示範素材</b><p>製作換背景、卡通化、換裝等示範畫面。</p></div></li>
+        <li><span class="yr">2024–2026</span><div><b class="q">AI 影片範本</b><p>F1、世足、<span class="nw">K-pop MV</span> 與萬聖節範本。</p></div></li>
+        <li><span class="yr">2026</span><div><b class="q">AI 創作流程與跨部門協作</b><p>加快發想與提案對齊，建立能隨 AI 工具更新的團隊製作流程。</p></div></li>
+      </ol>
     </div>
   </div>
 </section>
@@ -194,51 +192,59 @@
   <div class="wrap sec">
     <div class="sec-head">
       <p class="label"><svg class="mark"><use href="#m"/></svg>作品</p>
-      <h2>其他作品</h2>
+      <h2>更多影像作品</h2>
     </div>
 
+    <details class="work-disclosure" id="work-disclosure">
+      <summary>
+        <span class="work-peek" aria-hidden="true"><img src="media/poster/w_bounce.jpg" alt="" loading="lazy"><img src="media/poster/w_f1_helmet.jpg" alt="" loading="lazy"><img src="media/poster/w_worlds.jpg" alt="" loading="lazy"><img src="media/poster/vtv032_swipe.jpg" alt="" loading="lazy"></span>
+        <span class="work-summary"><b>19 支短片與效果範本</b><small>角色 · 運動 · 故事 · 影片轉影片</small><span class="work-open-label">展開作品 <span aria-hidden="true">＋</span></span><span class="work-close-label">收起作品 <span aria-hidden="true">−</span></span></span>
+      </summary>
+      <div class="work-content">
     <div class="group">
       <div class="group-head"><h3>角色</h3></div>
       <div class="wall">
-        <button class="clip" type="button" style="--ar:1.8182" data-pv="media/pv/w_bounce.mp4" data-full="media/w_bounce.mp4" data-ratio="1.8182" data-title="毛球熊在客廳裡彈來彈去" data-note="Grok 生成的角色短片，20 秒。最後撞上玻璃桌。"><img src="media/poster/w_bounce.jpg" alt="粉紅毛球熊坐在沙發上" loading="lazy"><span class="cap"><span class="dot"></span>毛球熊</span></button>
-        <button class="clip" type="button" style="--ar:1" data-pv="media/pv/w_smash.mp4" data-full="media/w_smash.mp4" data-ratio="1" data-title="一拳打裂地板" data-note="Grok 生成，25 秒。白色小毛球一拳打下去，整片木地板從中間裂開。"><img src="media/poster/w_smash.jpg" alt="白色毛球小怪獸坐在裂開的木地板上" loading="lazy"><span class="cap"><span class="dot"></span>一拳打裂地板</span></button>
-        <button class="clip" type="button" style="--ar:1" data-pv="media/pv/s_santa.mp4" data-full="media/s_santa.mp4" data-ratio="1" data-title="聖誕老人走路循環" data-note="聖誕角色的動態貼圖，原檔是綠幕輸出，這裡去背放在紙色底上。2025。"><img src="media/poster/s_santa.jpg" alt="背著紅布袋的聖誕老人" loading="lazy"><span class="cap"><span class="dot"></span>動態貼圖</span></button>
-        <button class="clip" type="button" style="--ar:1.7778" data-pv="media/pv/s_podcast_dogs.mp4" data-full="media/s_podcast_dogs.mp4" data-ratio="1.7778" data-title="兩隻狗錄 Podcast" data-note="Veo 3 的範本測試，8 秒，有聲。2025。"><img src="media/poster/s_podcast_dogs.jpg" alt="兩隻狗戴耳機對著麥克風" loading="lazy"><span class="cap"><span class="dot"></span>狗狗 Podcast</span></button>
+        <button class="clip" type="button" style="--ar:1.8182" data-pv="media/pv/w_bounce.mp4" data-full="media/w_bounce.mp4" data-ratio="1.8182" data-title="毛球熊在客廳裡彈來彈去" data-note="20 秒角色動畫。"><img src="media/poster/w_bounce.jpg" alt="粉紅毛球熊坐在沙發上" loading="lazy"><span class="cap"><span class="dot"></span>毛球熊</span></button>
+        <button class="clip" type="button" style="--ar:1" data-pv="media/pv/w_smash.mp4" data-full="media/w_smash.mp4" data-ratio="1" data-title="一拳打裂地板" data-note="25 秒角色動畫。"><img src="media/poster/w_smash.jpg" alt="白色毛球小怪獸坐在裂開的木地板上" loading="lazy"><span class="cap"><span class="dot"></span>一拳打裂地板</span></button>
+        <button class="clip" type="button" style="--ar:1" data-pv="media/pv/s_santa.mp4" data-full="media/s_santa.mp4" data-ratio="1" data-title="聖誕老人走路循環" data-note="聖誕角色動態貼圖 · 走路循環。"><img src="media/poster/s_santa.jpg" alt="背著紅布袋的聖誕老人" loading="lazy"><span class="cap"><span class="dot"></span>動態貼圖</span></button>
+        <button class="clip" type="button" style="--ar:1.7778" data-pv="media/pv/s_podcast_dogs.mp4" data-full="media/s_podcast_dogs.mp4" data-ratio="1.7778" data-title="兩隻狗錄 Podcast" data-note="8 秒有聲角色範本。"><img src="media/poster/s_podcast_dogs.jpg" alt="兩隻狗戴耳機對著麥克風" loading="lazy"><span class="cap"><span class="dot"></span>狗狗 Podcast</span></button>
       </div>
     </div>
 
     <div class="group">
       <div class="group-head"><h3>運動</h3></div>
       <div class="wall">
-        <button class="clip" type="button" style="--ar:1.7778" data-pv="media/pv/w_f1_helmet.mp4" data-full="media/w_f1_helmet.mp4" data-ratio="1.7778" data-title="F1 車手視角" data-note="4K 輸出，15 秒。"><img src="media/poster/w_f1_helmet.jpg" alt="F1 車手頭盔裡的眼睛" loading="lazy"><span class="cap"><span class="dot"></span>F1 車手視角</span></button>
-        <button class="clip" type="button" style="--ar:1.7778" data-pv="media/pv/w_f1_cars.mp4" data-full="media/w_f1_cars.mp4" data-ratio="1.7778" data-title="F1 多車" data-note="4K 輸出，15 秒。"><img src="media/poster/w_f1_cars.jpg" alt="空拍 F1 賽道" loading="lazy"><span class="cap"><span class="dot"></span>F1 多車</span></button>
-        <button class="clip" type="button" style="--ar:1.7778" data-pv="media/pv/w_boxing.mp4" data-full="media/w_boxing.mp4" data-ratio="1.7778" data-title="屋頂拳擊" data-note="Kling 生成，15 秒。"><img src="media/poster/w_boxing.jpg" alt="夕陽下屋頂上的兩個拳擊手" loading="lazy"><span class="cap"><span class="dot"></span>屋頂拳擊</span></button>
-        <button class="clip" type="button" style="--ar:1.7778" data-pv="media/pv/w_skate.mp4" data-full="media/w_skate.mp4" data-ratio="1.7778" data-title="跑酷" data-note="照參考片生成的 8 秒片段，後來當影片轉影片的原始素材。"><img src="media/poster/w_skate.jpg" alt="逆光跳下階梯的人影" loading="lazy"><span class="cap"><span class="dot"></span>跑酷</span></button>
-        <button class="clip" type="button" style="--ar:1.784" data-pv="media/pv/w_victory.mp4" data-full="media/w_victory.mp4" data-ratio="1.784" data-title="世足奪冠" data-note="世足範本的範例，美國、日本、台灣各一版，Kling 生成。這支是美國版。"><img src="media/poster/w_victory.jpg" alt="舉起獎盃的球員" loading="lazy"><span class="cap"><span class="dot"></span>世足奪冠</span></button>
+        <button class="clip" type="button" style="--ar:1.7778" data-pv="media/pv/w_f1_helmet.mp4" data-full="media/w_f1_helmet.mp4" data-ratio="1.7778" data-title="F1 車手視角" data-note="15 秒運動短片 · 車手近景。"><img src="media/poster/w_f1_helmet.jpg" alt="F1 車手頭盔裡的眼睛" loading="lazy"><span class="cap"><span class="dot"></span>F1 車手視角</span></button>
+        <button class="clip" type="button" style="--ar:1.7778" data-pv="media/pv/w_f1_cars.mp4" data-full="media/w_f1_cars.mp4" data-ratio="1.7778" data-title="F1 多車" data-note="15 秒運動短片 · 多車競速。"><img src="media/poster/w_f1_cars.jpg" alt="空拍 F1 賽道" loading="lazy"><span class="cap"><span class="dot"></span>F1 多車</span></button>
+        <button class="clip" type="button" style="--ar:1.7778" data-pv="media/pv/w_boxing.mp4" data-full="media/w_boxing.mp4" data-ratio="1.7778" data-title="屋頂拳擊" data-note="15 秒運動短片。"><img src="media/poster/w_boxing.jpg" alt="夕陽下屋頂上的兩個拳擊手" loading="lazy"><span class="cap"><span class="dot"></span>屋頂拳擊</span></button>
+        <button class="clip" type="button" style="--ar:1.7778" data-pv="media/pv/w_skate.mp4" data-full="media/w_skate.mp4" data-ratio="1.7778" data-title="跑酷" data-note="8 秒運動短片。"><img src="media/poster/w_skate.jpg" alt="逆光跳下階梯的人影" loading="lazy"><span class="cap"><span class="dot"></span>跑酷</span></button>
+        <button class="clip" type="button" style="--ar:1.784" data-pv="media/pv/w_victory.mp4" data-full="media/w_victory.mp4" data-ratio="1.784" data-title="世足奪冠" data-note="世足主題範本 · 美國版。"><img src="media/poster/w_victory.jpg" alt="舉起獎盃的球員" loading="lazy"><span class="cap"><span class="dot"></span>世足奪冠</span></button>
       </div>
     </div>
 
     <div class="group">
       <div class="group-head"><h3>品牌與故事</h3></div>
       <div class="wall">
-        <button class="clip" type="button" style="--ar:1.7778" data-pv="media/pv/w_worlds.mp4" data-full="media/w_worlds.mp4" data-ratio="1.7778" data-title="從電梯一路掉進一隻眼睛" data-note="Seedance 2.5 的文生影片範例，30 秒。電梯是往下的，所以每個轉場也往下走。結尾我只要眼睛閉起來，快剪的穿梭感要留著。"><img src="media/poster/w_worlds.jpg" alt="海底的鳥居和兩隻魟魚" loading="lazy"><span class="cap"><span class="dot"></span>電梯到眼睛</span></button>
-        <button class="clip" type="button" style="--ar:1.781" data-pv="media/pv/w_party.mp4" data-full="media/w_party.mp4" data-ratio="1.781" data-title="派對一鏡到底，跳進泳池" data-note="Seedance 2.5 的圖生影片範例，30 秒。"><img src="media/poster/w_party.jpg" alt="走向無邊際泳池的女生" loading="lazy"><span class="cap"><span class="dot"></span>派對一鏡到底</span></button>
-        <button class="clip" type="button" style="--ar:.5625" data-pv="media/pv/feib_idea2.mp4" data-full="media/feib_idea2_1080.mp4" data-ratio=".5625" data-title="賺 20% 再賠 20% 竟虧錢？" data-note="30 秒直式動畫。先用 AI 生出每一格的版面，把字和數字核對過，再生成影片、口白和音效。漲跌照台灣看盤的習慣，紅漲綠跌。"><img src="media/poster/feib_idea2.jpg" alt="直式動畫的開場：上半紅色色塊寫「賺 20%」，下半綠色色塊寫「再賠 20%」" loading="lazy"><span class="cap"><span class="dot"></span>觀念動畫</span></button>
-        <button class="clip" type="button" style="--ar:1.7778" data-pv="media/pv/w_proposal.mp4" data-full="media/w_proposal.mp4" data-ratio="1.7778" data-title="雨夜求婚" data-note="日系純愛風的情緒戲，15 秒。"><img src="media/poster/w_proposal.jpg" alt="雨夜裡哭著拿出戒指的男生" loading="lazy"><span class="cap"><span class="dot"></span>雨夜求婚</span></button>
+        <button class="clip" type="button" style="--ar:1.7778" data-pv="media/pv/w_worlds.mp4" data-full="media/w_worlds.mp4" data-ratio="1.7778" data-title="電梯到眼睛" data-note="30 秒場景穿梭短片。"><img src="media/poster/w_worlds.jpg" alt="海底的鳥居和兩隻魟魚" loading="lazy"><span class="cap"><span class="dot"></span>電梯到眼睛</span></button>
+        <button class="clip" type="button" style="--ar:1.781" data-pv="media/pv/w_party.mp4" data-full="media/w_party.mp4" data-ratio="1.781" data-title="派對一鏡到底，跳進泳池" data-note="30 秒派對情境短片。"><img src="media/poster/w_party.jpg" alt="走向無邊際泳池的女生" loading="lazy"><span class="cap"><span class="dot"></span>派對一鏡到底</span></button>
+        <button class="clip" type="button" style="--ar:.5625" data-pv="media/pv/feib_idea2.mp4" data-full="media/feib_idea2_1080.mp4" data-ratio=".5625" data-title="賺 20% 再賠 20% 竟虧錢？" data-note="30 秒直式觀念動畫。"><img src="media/poster/feib_idea2.jpg" alt="直式動畫的開場：上半紅色色塊寫「賺 20%」，下半綠色色塊寫「再賠 20%」" loading="lazy"><span class="cap"><span class="dot"></span>觀念動畫</span></button>
+        <button class="clip" type="button" style="--ar:1.7778" data-pv="media/pv/w_proposal.mp4" data-full="media/w_proposal.mp4" data-ratio="1.7778" data-title="雨夜求婚" data-note="15 秒情境短片。"><img src="media/poster/w_proposal.jpg" alt="雨夜裡哭著拿出戒指的男生" loading="lazy"><span class="cap"><span class="dot"></span>雨夜求婚</span></button>
       </div>
     </div>
 
     <div class="group">
-      <div class="group-head"><h3>影片轉影片</h3><p>跨素材測試，驗收門檻為八成成功率。</p></div>
+      <div class="group-head"><h3>影片轉影片</h3></div>
       <div class="vtv">
-        <button class="clip" type="button" data-pv="media/pv/vtv027_swipe.mp4" data-full="media/vtv027_swipe.mp4" data-ratio="1" data-title="眼睛變愛心" data-note="Seedance 2.5。這個效果是靠我指定參考圖怎麼裁做出來的。"><img src="media/poster/vtv027_swipe.jpg" alt="眼睛變成愛心的男生" loading="lazy"><span class="cap"><span class="dot"></span><span>眼睛變愛心<br><small>Seedance 2.5</small></span></span></button>
-        <button class="clip" type="button" data-pv="media/pv/vtv028_swipe.mp4" data-full="media/vtv028_swipe.mp4" data-ratio="1" data-title="夜空放煙火" data-note="Seedance 2.0。"><img src="media/poster/vtv028_swipe.jpg" alt="河岸夜景上空的煙火" loading="lazy"><span class="cap"><span class="dot"></span><span>夜空放煙火<br><small>Seedance 2.0</small></span></span></button>
-        <button class="clip" type="button" data-pv="media/pv/vtv029_swipe.mp4" data-full="media/vtv029_swipe.mp4" data-ratio="1" data-title="整個畫面變方塊世界" data-note="Gemini Omni。"><img src="media/poster/vtv029_swipe.jpg" alt="變成方塊像素的餐桌" loading="lazy"><span class="cap"><span class="dot"></span><span>方塊世界<br><small>Gemini Omni</small></span></span></button>
-        <button class="clip" type="button" data-pv="media/pv/vtv030_swipe.mp4" data-full="media/vtv030_swipe.mp4" data-ratio="1" data-title="補一盞電影光" data-note="Seedance 2.5。"><img src="media/poster/vtv030_swipe.jpg" alt="戴鑽石項鍊的模特兒" loading="lazy"><span class="cap"><span class="dot"></span><span>電影光<br><small>Seedance 2.5</small></span></span></button>
-        <button class="clip" type="button" data-pv="media/pv/vtv031_swipe.mp4" data-full="media/vtv031_swipe.mp4" data-ratio="1" data-title="按摩椅飄到雲上" data-note="Seedance 2.0。雲要藍天，不要夕陽。"><img src="media/poster/vtv031_swipe.jpg" alt="坐在按摩椅上飄在雲裡的女生" loading="lazy"><span class="cap"><span class="dot"></span><span>雲上藍天<br><small>Seedance 2.0</small></span></span></button>
-        <button class="clip" type="button" data-pv="media/pv/vtv032_swipe.mp4" data-full="media/vtv032_swipe.mp4" data-ratio="1" data-title="實拍變素描" data-note="Gemini Omni。"><img src="media/poster/vtv032_swipe.jpg" alt="素描風格的階梯和單車騎士" loading="lazy"><span class="cap"><span class="dot"></span><span>實拍變素描<br><small>Gemini Omni</small></span></span></button>
+        <button class="clip" type="button" data-pv="media/pv/vtv027_swipe.mp4" data-full="media/vtv027_swipe.mp4" data-ratio="1" data-title="眼睛變愛心" data-note="影片轉影片 · 愛心眼睛。"><img src="media/poster/vtv027_swipe.jpg" alt="眼睛變成愛心的男生" loading="lazy"><span class="cap"><span class="dot"></span>眼睛變愛心</span></button>
+        <button class="clip" type="button" data-pv="media/pv/vtv028_swipe.mp4" data-full="media/vtv028_swipe.mp4" data-ratio="1" data-title="夜空放煙火" data-note="影片轉影片 · 場景特效。"><img src="media/poster/vtv028_swipe.jpg" alt="河岸夜景上空的煙火" loading="lazy"><span class="cap"><span class="dot"></span>夜空放煙火</span></button>
+        <button class="clip" type="button" data-pv="media/pv/vtv029_swipe.mp4" data-full="media/vtv029_swipe.mp4" data-ratio="1" data-title="整個畫面變方塊世界" data-note="影片轉影片 · 方塊風格。"><img src="media/poster/vtv029_swipe.jpg" alt="變成方塊像素的餐桌" loading="lazy"><span class="cap"><span class="dot"></span>方塊世界</span></button>
+        <button class="clip" type="button" data-pv="media/pv/vtv030_swipe.mp4" data-full="media/vtv030_swipe.mp4" data-ratio="1" data-title="補一盞電影光" data-note="影片轉影片 · 光影效果。"><img src="media/poster/vtv030_swipe.jpg" alt="戴鑽石項鍊的模特兒" loading="lazy"><span class="cap"><span class="dot"></span>電影光</span></button>
+        <button class="clip" type="button" data-pv="media/pv/vtv031_swipe.mp4" data-full="media/vtv031_swipe.mp4" data-ratio="1" data-title="按摩椅飄到雲上" data-note="影片轉影片 · 場景轉換。"><img src="media/poster/vtv031_swipe.jpg" alt="坐在按摩椅上飄在雲裡的女生" loading="lazy"><span class="cap"><span class="dot"></span>雲上藍天</span></button>
+        <button class="clip" type="button" data-pv="media/pv/vtv032_swipe.mp4" data-full="media/vtv032_swipe.mp4" data-ratio="1" data-title="實拍變素描" data-note="影片轉影片 · 素描風格。"><img src="media/poster/vtv032_swipe.jpg" alt="素描風格的階梯和單車騎士" loading="lazy"><span class="cap"><span class="dot"></span>實拍變素描</span></button>
       </div>
     </div>
+      </div>
+    </details>
   </div>
 </section>
 
@@ -246,42 +252,42 @@
   <div class="wrap">
     <div class="sec-head">
       <p class="label"><svg class="mark"><use href="#m"/></svg>長內容</p>
-      <h2>把長內容，做成能用的工具</h2>
-      <p>我整理清流君與大仁來開槓的主張、依據與分歧，再做成決策工具與練習。</p>
+      <h2>內容整理與互動設計</h2>
+      <p>將長篇節目整理成章節卡、條件試算與互動演練。</p>
       <ul class="knowledge-meta" aria-label="整理規模"><li>80 多集</li><li>1,800 多章</li><li>近 200 條規則</li></ul>
     </div>
     <div class="knowledge-grid">
       <article class="knowledge-card">
         <figure class="knowledge-preview"><img src="img/fin_dashboard_parity_20261005.png" alt="最新版體檢表的大跌試算：滑桿試算淨值、曝險與子彈，使用示範資料" width="1600" height="900" loading="lazy"></figure>
         <div class="knowledge-copy">
-          <h3>從節目到判斷工具</h3>
-          <p>章節與規則可回查出處。填入條件，產生規劃書，先指出最該處理的事。</p>
+          <h3>章節卡與條件試算</h3>
+          <p>整合章節、規則與條件試算。</p>
         </div>
         <details class="demo-disclosure" id="chap-disclosure">
           <summary><span class="when-closed">試用章節卡</span><span class="when-open">收起章節卡</span></summary>
           <div class="demo-content"><figure class="shot chap-demo">
           <div class="ch" id="chap"><noscript>章節卡要開 JavaScript 才能點。</noscript></div>
-          <figcaption>選章節看整理，點「聽原話」回到原節目。</figcaption>
         </figure>
-            <p class="demo-method">每章整理主張與依據，視內容補上反駁與待查證項目。</p>
           </div>
         </details>
       </article>
       <article class="knowledge-card">
         <figure class="knowledge-preview"><img src="img/fin_replay_parity_20261005.png" alt="0050 行情演練：重播到 2025 年 4 月 9 日，讓讀者在看答案前做選擇" width="1600" height="900" loading="lazy"></figure>
         <div class="knowledge-copy">
-          <h3>把風險，變成一次練習</h3>
-          <p>重播真實行情，在結果揭曉前做決定。透過分階練習，從小額實作走向讀公開說明書、算成本。</p>
+          <h3>互動行情演練</h3>
+          <p>以時間軸與選項呈現不同決策的結果。</p>
         </div>
         <details class="demo-disclosure" id="drill-disclosure">
           <summary><span class="when-closed">做一次行情演練</span><span class="when-open">收起行情演練</span></summary>
           <div class="demo-content"><figure class="shot drill-demo" id="drill">
           <div class="dd">
-            <h4 class="dd-t">2025 年 4 月：<wbr>連假回來，<wbr>0050 三天跌掉一成七</h4>
-            <p class="dd-set">假設你從 2024 年 4 月起，每個月第一個交易日用收盤價買 1,000 元的 0050，可買零股、不算手續費，配息當天再買回去。股價都是證交所的收盤價。</p>
+            <h4 class="dd-t">2025 年 4 月 · 行情重播</h4>
+            <details class="calculation-settings"><summary>計算設定與資料來源</summary>
+              <p class="dd-set">假設你從 2024 年 4 月起，每個月第一個交易日用收盤價買 1,000 元的 0050，可買零股、不算手續費，配息當天再買回去。股價都是證交所的收盤價。</p>
+            </details>
             <div class="dd-rp"><noscript>這個練習要開 JavaScript 才能玩。</noscript></div>
             <div class="dd-pick" hidden>
-              <div class="dd-ask">4/9 晚上，你會怎麼做？</div>
+              <div class="dd-ask">選擇情境，查看結果</div>
               <div class="dd-opts">
                 <label><input type="radio" name="dd-c" value="A">全部賣掉</label>
                 <label><input type="radio" name="dd-c" value="B">先停扣，等穩了再說</label>
@@ -293,16 +299,13 @@
             <div class="dd-reveal" hidden>
               <div class="dd-fb mine"></div>
               <div class="dd-fb after"></div>
-              <p class="dd-caution"><b>這是事後才知道的。</b>當下沒有人知道會不會像 2000 年那樣一路跌下去。那一次，加權指數從 2000 年 2 月的高點跌了 66.2%，到 2003 年底都還比高點少四成多（不含息）。</p>
             </div>
           </div>
-          <figcaption>重播行情，走到 4/9 再做決定。</figcaption>
         </figure>
           </div>
         </details>
       </article>
     </div>
-    <p class="knowledge-note">節目內容屬原作者，原話請回原節目聽。這是個人學習工具，非投資建議。</p>
   </div>
 </section>
 
@@ -310,59 +313,35 @@
   <div class="wrap">
     <div class="sec-head">
       <p class="label"><svg class="mark"><use href="#m"/></svg>工具</p>
-      <h2>讓製作流程更省時間</h2>
-      <p>我定需求與操作流程，Claude Code 寫程式。</p>
+      <h2>製作流程工具</h2>
+      <p>需求與流程設計 · Claude Code 協作開發</p>
     </div>
     <div class="steps">
       <article class="step">
         <figure class="step-shot"><img src="img/tool_ref_clear_20261005.png" alt="參考影片擷取的實際收藏畫面：來源分類與清晰影片牆" width="1280" height="800" loading="lazy"></figure>
         <h3 class="step-k"><span class="n">01</span>找參考<span class="tn">參考影片擷取</span></h3>
-        <p>把喜歡的影片拆成關鍵字，批次搜尋 YouTube、IG、X，再用影片牆篩選與收藏。找日系 MG 時，曾一次整理 300 多支參考。</p>
+        <p>批次搜尋 YouTube、IG、X，集中篩選與收藏。</p>
       </article>
       <article class="step">
         <figure class="step-shot"><img src="img/tool_gen.jpg" alt="AI 生成工作台：左邊列出各家生成模型，右邊是表單，生成鈕旁邊填次數" loading="lazy"></figure>
         <h3 class="step-k"><span class="n">02</span>生成<span class="tn">AI 生成工作台</span></h3>
-        <p>整合多個生成模型，批次送出、統一收檔。Claude Code 操作工具，我看結果、決定下一輪；生成效率約為原來的 3–4 倍。</p>
+        <p>整合生成模型，批次提交任務與統一收檔。</p>
       </article>
       <article class="step">
         <figure class="step-shot"><img src="img/tool_pack.jpg" alt="影音多功能打包器：三個檔案在清單裡，選了 9:16，預覽上有可以拖的裁切框" loading="lazy"></figure>
         <h3 class="step-k"><span class="n">03</span>交檔<span class="tn">影音多功能打包器</span></h3>
-        <p>批次轉尺寸與格式，需要時調整裁切。一批交檔由約 2–3 小時縮至 5 分鐘，工具也交給內容部門使用。</p>
+        <p>批次轉尺寸、格式與裁切，供內容團隊使用。</p>
       </article>
     </div>
-    <p class="steps-note">效率與時間為個人估算。</p>
   </div>
 </section>
 
-<section class="sec" id="career">
-  <div class="wrap">
-    <div class="sec-head">
-      <p class="label"><svg class="mark"><use href="#m"/></svg>經歷</p>
-      <h2>這幾年在解決的事</h2>
-    </div>
-    <div class="career">
-      <div>
-        <p>在訊連製作 PowerDirector、PhotoDirector、MyEdit 的素材、模板與 AI 影片範本，也建立團隊製作流程。</p>
-        <div class="tools">
-          <p class="label">常用工具</p>
-          <div class="chips"><span>After Effects</span><span>PowerDirector</span><span>Illustrator</span><span>Seedance</span><span>Kling</span><span>Veo</span><span>Wan</span><span>Grok</span><span>Gemini</span><span>Runway</span><span>Claude Code</span></div>
-        </div>
-      </div>
-      <ol class="tl">
-        <li><span class="yr">2019–2025</span><div><b class="q">特效與影片模板</b><p>製作特效素材、行銷模板與字卡，支援不同畫面比例，讓使用者直接套用。</p></div></li>
-        <li><span class="yr">2023–2024</span><div><b class="q">AI 功能視覺</b><p>設計換背景、卡通化、換裝、大頭照與追蹤特效，讓功能一眼看懂。</p></div></li>
-        <li><span class="yr">2024–2026</span><div><b class="q">AI 影片範本</b><p>反覆測試文生圖、文生影片與圖生影片的穩定度；完成 F1、世足、<span class="nw">K-pop MV</span> 與萬聖節範本。</p></div></li>
-        <li><span class="yr">2026</span><div><b class="q">團隊流程與協作</b><p>把案子拆成可重用的流程與規則，持續迭代，提早發現製作問題並討論。</p></div></li>
-      </ol>
-    </div>
-  </div>
-</section>
 
 <section class="sec contact" id="contact">
   <div class="wrap">
     <h2>想聊的話，<br><span class="b">寫信給我。</span></h2>
     <div class="mail-row">
-      <span class="mail" id="mail">samhere723@gmail.com</span>
+      <a class="mail" id="mail" href="mailto:samhere723@gmail.com">samhere723@gmail.com</a>
       <button class="copy" type="button" id="copyMail">複製信箱</button>
     </div>
     <p class="muted">台北</p>
@@ -370,7 +349,7 @@
 </section>
 </main>
 
-<div class="wrap"><footer class="foot"><span>© 2026 Sam Lin</span><span>網站是我跟 Claude Code 一起做的。</span></footer></div>
+<div class="wrap"><footer class="foot"><span>© 2026 Sam Lin</span></footer></div>
 
 <div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-labelledby="lbTitle">
   <div class="lb-inner">
