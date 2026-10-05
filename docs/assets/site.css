@@ -478,7 +478,7 @@ h1, h2, h3, .proof b, .big-num span { word-break: keep-all; overflow-wrap: anywh
 
 
 /* A real V10 frame stays visible through its first blank opening frames. */
-.reel-frame { background: var(--ink) url('../img/showreel_cover_20261005.jpg') center / cover no-repeat; }
+.reel-frame { background: var(--ink) url('../img/showreel_cover_dance_20261005.jpg') center / cover no-repeat; }
 .reel-frame video { opacity: 0; transition: opacity 180ms var(--ease); }
 .reel-frame.ready video { opacity: 1; }
 .cases .clip .cap { white-space: nowrap; font-size: 12px; gap: 6px; padding: 4px 8px 4px 4px; }
