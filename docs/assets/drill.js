@@ -261,6 +261,15 @@
   scrub.addEventListener('input', function () { stop(); started = true; go(+scrub.value); if (cur >= +scrub.max) arrive(); else label(); });
   var t0 = null;
   window.addEventListener('resize', function () { clearTimeout(t0); t0 = setTimeout(draw, 120); });
+  var disclosure = root.closest('details');
+  if (disclosure) {
+    disclosure.addEventListener('toggle', function () {
+      if (disclosure.open) draw();
+      else stop();
+    });
+    new MutationObserver(function () { if (!disclosure.open) stop(); })
+      .observe(disclosure, { attributes: true, attributeFilter: ['open'] });
+  }
 
   /* 選了才能按；按了就從 4/9 播到 7 月底，播完才打開回饋 */
   $$('.dd-opts input', root).forEach(function (r) { r.addEventListener('change', function () { btn.disabled = false; }); });
