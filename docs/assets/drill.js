@@ -85,7 +85,7 @@
   box.innerHTML =
     '<div class="dd-head"><div class="dd-date"><b></b><span></span></div><div class="dd-nums"></div><div class="dd-day"></div></div>' +
     '<label class="dd-amt">' + esc(sc.label) + ' <input type="number" min="0" step="' + sc.step + '" inputmode="decimal"> ' + esc(sc.unit) +
-    '<span>改了金額，下面的數字等比例跟著變，百分比不變</span></label>' +
+    '</label>' +
     '<div class="dd-legend" hidden></div><div class="dd-plot"></div>' +
     '<div class="dd-note" aria-live="polite"></div>' +
     '<div class="dd-ctl"><button type="button" class="dd-btn main dd-play"></button>' +
